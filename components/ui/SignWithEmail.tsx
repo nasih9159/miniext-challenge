@@ -39,7 +39,7 @@ const SignWithEmail = (props: Props) => {
     }
 
     useEffect(() => {
-        if (props.type === 'sign-up' && isEmail(email) && password.length >= 6) {
+        if (isEmail(email) && password.length >= 6) {
             setDisableSubmit(false);
         } else {
             setDisableSubmit(true);
